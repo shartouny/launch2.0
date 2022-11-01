@@ -1,0 +1,28 @@
+{
+    "name": "sunrise-integration/launch-app",
+    "description": "Middleware for Launch Store Api",
+    "authors": [
+        {
+            "name": "Mohamad Masri",
+            "email": "mohamad@teelaunch.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "SunriseIntegration\\Launch\\": "src/"
+        }
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "SunriseIntegration\\Launch\\LaunchServiceProvider"
+        ],
+        "aliases": {
+          "Launch": "SunriseIntegration\\Launch\\Facade"
+        }
+      }
+    }
+}

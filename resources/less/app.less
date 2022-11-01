@@ -1,0 +1,724 @@
+@import '~antd/dist/antd.less';
+// Import Ant Design styles by less entry
+@import 'variables.less';
+// variables to override above
+@import 'spacing.less';
+
+// Helper Classes
+.text-center {
+  text-align: center;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+.clickable {
+  -webkit-box-shadow: 1px 0 0 0 #e8e8e8, 0 1px 0 0 #e8e8e8, 1px 1px 0 0 #e8e8e8, 1px 0 0 0 #e8e8e8 inset, 0 1px 0 0 #e8e8e8 inset;
+  box-shadow: 1px 0 0 0 #e8e8e8, 0 1px 0 0 #e8e8e8, 1px 1px 0 0 #e8e8e8, 1px 0 0 0 #e8e8e8 inset, 0 1px 0 0 #e8e8e8 inset;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.clickable:hover {
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.page-wrapper {
+  max-width: 1600px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.top-nav {
+  border-bottom: 0.0625rem solid #e8e8e8;
+}
+
+#nav {
+  text-align: right;
+  border-bottom: none;
+  width: 100%;
+}
+
+.brand-image {
+  max-height: 1.875rem;
+  margin: 1rem 0.5rem 0.5rem -0.5rem;
+}
+
+.beta-prevew {
+  font-weight: 500;
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+  font-size: 16px
+}
+
+#components-form-normal-login .login-form {
+  max-width: 300px;
+}
+
+#components-form-normal-login .login-form-forgot {
+  float: right;
+}
+
+#components-form-normal-login .login-form-button {
+  width: 100%;
+}
+
+.upload-list-inline .ant-upload-list-item {
+  float: left;
+  width: 200px;
+  margin-right: 8px;
+}
+
+.upload-list-inline .ant-upload-animate-enter {
+  animation-name: uploadAnimateInlineIn;
+}
+
+.upload-list-inline .ant-upload-animate-leave {
+  animation-name: uploadAnimateInlineOut;
+}
+
+.box-border {
+  border: 1px solid #e8e8e8;
+}
+
+.swatch-block {
+  height: 12px;
+  width: 12px;
+  margin-right: 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+
+.swatch-thumb.active {
+  border: 2px solid @primary-color;
+  margin-bottom: 8px;
+}
+
+.swatch-thumb {
+  width: 28px;
+  height: 28px;
+  border-radius: 3px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.stage-wrapper {
+  position: relative;
+}
+
+.stage-level-one {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.stage-active-area {
+
+}
+
+.stage-level-two {
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+}
+
+.upload-button {
+  border: 1px dashed #E8E8E8;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.upload-button-inner {
+  background: #FAFAFA;
+  text-align: center;
+  color: #8F8F8F;
+  padding: 15px 0;
+}
+
+.designer-batch-thumbnail {
+  width: 200px;
+  display: inline-block;
+  margin: 0 30px;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+  }
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  min-height: 64px;
+
+  .ant-btn {
+    margin: 0 .5rem;
+  }
+}
+
+.ant-avatar {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 0;
+  background-color: #fff;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.ant-pagination {
+  margin: 16px 8px;
+  display: flex;
+  //justify-content: center;
+}
+
+.ant-message {
+  font-size: 1.1em;
+
+  .anticon {
+    font-size: 1.2em;
+  }
+}
+
+.image {
+  opacity: 0;
+  height: 0;
+  transition: opacity 0.3s;
+  cursor: 'pointer';
+}
+
+.image-loaded {
+  opacity: 1;
+  height: inherit;
+  transition: opacity 0.3s;
+  padding: 16px;
+}
+
+.product-preview-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 993px) {
+  .product-preview-container {
+    position: sticky;
+    top: 90px;
+    max-height: 750px;
+  }
+}
+
+.data-id {
+  font-size: 10px;
+  color: #aaaaaa;
+}
+
+.grecaptcha-badge {
+  opacity: 0;
+  display: none;
+  visibility: hidden;
+}
+
+.settings-container {
+  padding: 24px;
+  margin-bottom: 48px;
+  border: 1px solid rgb(217, 217, 217);
+}
+
+.platform-logo {
+  width: 32px;
+}
+
+#root {
+  padding-bottom: 80px;
+}
+
+.public-DraftEditor-content {
+  padding: 0 8px;
+}
+
+.error-tag {
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.ant-modal-title {
+  text-transform: uppercase;
+  font-family: 'Bison', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.ant-pagination-item, .ant-pagination-prev, .ant-pagination-next, .ant-pagination-prev .ant-pagination-item-link, .ant-pagination-next .ant-pagination-item-link, .ant-pagination-jump-prev, .ant-pagination-jump-next {
+  border-radius: 50%;
+  color: @primary-color;
+  background: none;
+  width: 36px;
+  min-width: 36px;
+  height: 36px;
+  line-height: 32px;
+  padding-left: 1px;
+}
+
+.ant-pagination-item {
+  border: 0;
+}
+
+.ant-pagination-item-active {
+  border: 1px solid @primary-color;
+}
+
+.ant-pagination-prev .ant-pagination-item-link, .ant-pagination-next .ant-pagination-item-link {
+  .anticon svg {
+    display: none;
+  }
+
+  background-image: @icon-caret-right !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+.ant-pagination-prev .ant-pagination-item-link {
+  transform: rotate(180deg);
+}
+
+.ant-pagination-disabled {
+  &.ant-pagination-prev .ant-pagination-item-link, &.ant-pagination-next .ant-pagination-item-link {
+    background-image: @icon-caret-right-disabled !important;
+  }
+}
+
+.ant-pagination.mini .ant-pagination-item, .ant-pagination.mini .ant-pagination-prev .ant-pagination-item-link, .ant-pagination.mini .ant-pagination-next .ant-pagination-item-link {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.ant-btn {
+  border-radius: 500px;
+  color: @tl-action;
+  height: 36px;
+  padding: 0 18px;
+
+  &:disabled {
+    background: @tl-action;
+    color: @tl-light-violet;
+  }
+
+  &.ant-btn-danger, &.ant-btn-primary {
+    &:not(.ant-btn-background-ghost) {
+      color: white;
+    }
+  }
+}
+
+.ant-table-pagination.ant-pagination {
+  float: none;
+}
+
+.ant-pagination.mini .ant-pagination-prev .ant-pagination-item-link, .ant-pagination.mini .ant-pagination-next .ant-pagination-item-link {
+  background: initial;
+}
+
+.ant-card-meta-title {
+  font-weight: 500;
+}
+
+.batch-design-btn {
+  background-image: @icon-batch-design;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+
+  &.ant-btn:focus{
+    background-image: @icon-batch-design;
+
+  }
+  &.ant-btn:hover, &.ant-btn.in-batch:focus, &.ant-btn:active, &.ant-btn.active, &.in-batch {
+    background-image: @icon-batch-design-hover;
+  }
+}
+
+.product-info-btn {
+  background-image: @icon-product-info;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+
+  &.ant-btn:hover, &.ant-btn:focus, &.ant-btn:active, &.ant-btn.active {
+    background-image: @icon-product-info-hover;
+  }
+}
+
+.ant-tooltip-inner {
+  background: @tl-purple;
+  border-radius: 500px;
+  padding: 8px 16px;
+}
+
+.ant-tooltip-arrow {
+  color: @tl-purple;
+}
+
+.ant-drawer-title {
+  font-family: 'Bison', sans-serif;
+  font-size: 40px;
+}
+
+.ant-card-actions {
+  li {
+    border-right: none;
+  }
+}
+
+.steps-content {
+  background: white;
+  padding: 32px 64px 16px;
+  border: 1px solid @tl-light-violet;
+  //border-bottom: 0;
+  border-radius: 0 8px 8px 8px;
+  margin-bottom: 0px;
+}
+
+.ant-steps-horizontal:not(.ant-steps-label-vertical) .ant-steps-item {
+  padding: 16px 32px;
+  margin-right: 0;
+  flex-grow: 0;
+  overflow: initial;
+}
+
+.ant-steps-item-active {
+  background: white;
+  border-radius: 8px 8px 0 0;
+  border: 1px solid @tl-light-violet;
+  border-bottom: 1px solid white;
+}
+
+.ant-steps-item-icon {
+  height: 26px;
+  width: 26px;
+  line-height: 24px;
+}
+
+.ant-steps-item-title {
+  line-height: 26px;
+}
+
+.ant-steps-item-title::after {
+  display: none;
+}
+
+.ant-steps {
+  position: relative;
+  top: 1px;
+}
+
+.product-builder-footer {
+  background: white;
+  border-radius: 0 0 8px 8px;
+  //border: 1px solid @tl-light-violet;
+  border-top: 1px solid @tl-light-violet;
+  //padding: 0 64px 32px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 16px 64px;
+  width: 100%;
+  z-index: 1000;
+
+  .ant-btn {
+    width: 150px;
+    margin: 0 16px;
+  }
+}
+
+.art-placement-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+
+  div {
+    width: 90%;
+    flex-grow: 1;
+    height: 100%;
+  }
+}
+
+.ant-table {
+  border-radius: 7px 7px 0 0;
+}
+
+.ant-input {
+  height: 36px;
+}
+
+.ant-tag-checkable {
+  border-radius: 500px;
+}
+
+.variant-table {
+  width: 100%;
+
+  .ant-table {
+    border-radius: 8px 8px 0 0;
+
+    .ant-table-tbody > tr > td {
+
+    }
+
+    .ant-table-header {
+      border-radius: 8px 8px 0 0;
+    }
+
+    .ant-table-thead > tr:first-child > th:first-child {
+
+    }
+
+    th {
+      padding: 6px 16px 5px;
+    }
+
+    td {
+      padding: 12px 16px;
+    }
+  }
+}
+
+.ant-result-title {
+  font-weight: 500;
+}
+
+.ant-steps-item-finish .ant-steps-item-icon {
+  background: @tl-gray;
+
+  > .ant-steps-icon {
+    color: white;
+  }
+}
+
+.ant-dropdown-menu {
+  background: @tl-purple;
+
+  .ant-dropdown-menu-item, .ant-dropdown-menu-submenu-title {
+    color: white;
+
+    a {
+      color: white;
+    }
+  }
+}
+
+.ant-input-suffix {
+  i {
+    margin-right: 4px;
+  }
+}
+
+.ant-drawer-body {
+  img {
+    max-width: 100% !important;
+    height: inherit !important;
+  }
+}
+
+.top-nav .ant-menu-item, .top-nav .ant-menu-submenu-title {
+  font-weight: 500;
+}
+
+.blank-option-checkable-flag {
+  cursor: pointer;
+  padding: 5px 5px 5px 15px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  min-width: 205px;
+  width: 25%;
+}
+
+.ant-tag.ant-tag-checkable.ant-tag-checkable-checked:after {
+  height: 20px;
+  width: 20px;
+  float: right;
+}
+
+.ant-checkbox {
+  padding: 8px;
+
+  &.ant-checkbox-checked::after {
+    border: 0;
+  }
+}
+
+.ant-spin {
+  padding: 8px;
+  font-size: 12px;
+}
+
+.premium-canvas-img-wrapper {
+  width: 300px;
+  height: 300px;
+
+  text-align: center;
+
+  img {
+    max-width: 298px;
+    max-height: 298px;
+    border: 1px solid #444FE5;
+  }
+}
+
+.grayscale-filter {
+  filter: contrast(0) grayscale(1);
+}
+
+.product-card {
+  .ant-btn {
+    white-space: normal;
+  }
+
+  .ant-card-actions > li > span {
+    line-height: 32px;
+  }
+
+  .product-card-meta {
+    .ant-card-meta-title {
+      height: 52px;
+      text-align: center;
+      text-overflow: initial;
+      white-space: normal;
+    }
+  }
+}
+
+.product-description {
+  column-count: 2;
+}
+
+.ant-table-small > .ant-table-content > .ant-table-body {
+  margin: 0 auto;
+}
+
+#launcher-frame {
+  bottom: 4px !important;
+}
+
+.variant-table-batch-actions {
+  position: relative;
+  top: -20px;
+  left: 0;
+  min-height: 36px;
+}
+
+.ant-dropdown-menu-item {
+  a:hover, div:hover {
+    color: @tl-purple;
+  }
+}
+
+//------- MANUAL ORDER ----------//
+
+
+.address-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .address-row__icon {
+    font-size: 2.5em;
+    margin-right: 20px;
+  }
+  .address-row__info > p {
+    padding: 0;
+    margin-bottom: 5px;
+  }
+}
+
+.product-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .product-row__thumb,
+  .product-row__name {
+    margin: 0;
+  }
+}
+
+#variant-row {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .variant-row__item > .item-title {
+    font-weight: bold;
+    margin-top: 3px;
+  }
+  .variant-row__item > .item-value {
+    margin-left: 8px;
+  }
+}
+
+#manual-order {
+  .line-item__selected {
+    display: flex;
+    justify-content: flex-start;
+    div {
+      margin-left: 10px;
+      p {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .add-item-btn {
+      margin-right: 5px;
+      padding: 0 40px;
+    }
+  }
+  .address-form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+}
+
+//Order Status Search Custom CSS
+.statusFilter {
+  margin-left: 8px;
+  min-width: 255px;
+  .ant-select-selection--single {
+    min-height: 37px;
+    max-height: 37px;
+  }
+
+  .ant-select-selection__rendered {
+    height: 29px;
+    line-height: 33px;
+  }
+
+  .ant-select-selection__placeholder {
+    top: 60%;
+  }
+}
+//END Order Status Search Custom CSS
+
+//antd table custom css
+.overflow-table .ant-table-body{
+  overflow-x: auto;
+}
+//End antd table custom css

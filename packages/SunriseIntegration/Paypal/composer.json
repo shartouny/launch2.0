@@ -1,0 +1,17 @@
+{
+    "name": "sunrise-integration/paypal-app",
+    "authors": [
+        {
+            "name": "Taylor Tobin",
+            "email": "taylor@sunriseintegration.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "SunriseIntegration\\Paypal\\": "src/"
+        }
+    }
+}

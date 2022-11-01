@@ -1,0 +1,16 @@
+export const ORDER_STATUSES = {
+    'HOLD' : 0,
+    'OUT_OF_STOCK' : 2,
+    'PLATFORM_PAYMENT_HOLD' : 5,
+    'PENDING' : 10,
+    'PROCESSING_PAYMENT' : 20,
+    'PAID' : 30,
+    'PROCESSING_PRODUCTION' : 40,
+    'PRODUCTION' : 50,
+    'PARTIAL_SHIPPED' : 60,
+    'SHIPPED' : 70,
+    'PROCESSING_FULFILLMENT' : 80,
+    'FULFILLED' : 90,
+    'CANCELLED' : 100,
+    'IGNORED' : 110,
+};

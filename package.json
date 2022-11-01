@@ -1,0 +1,70 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/preset-react": "^7.10.1",
+    "antd-scss-theme-plugin": "^1.0.8",
+    "axios": "^0.18.1",
+    "babel-preset-react": "^6.23.0",
+    "browser-sync": "^2.26.13",
+    "browser-sync-webpack-plugin": "^2.0.1",
+    "cross-env": "^5.2.1",
+    "eslint": "^7.5.0",
+    "jquery": "^3.5.1",
+    "laravel-mix": "^4.1.4",
+    "laravel-mix-purgecss": "^4.2.0",
+    "less": "^3.11.2",
+    "less-loader": "^5.0.0",
+    "lodash": "^4.17.19",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "redux-devtools": "^3.5.0",
+    "resolve-url-loader": "^2.3.2",
+    "sass": "^1.26.7",
+    "sass-loader": "^7.3.1"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.2.2",
+    "@sentry/react": "^5.27.0",
+    "@sentry/tracing": "^5.27.0",
+    "@stripe/react-stripe-js": "^1.1.2",
+    "@stripe/stripe-js": "^1.9.0",
+    "antd": "^3.26.18",
+    "braintree-web-drop-in-react": "^1.1.2",
+    "crypto-js": "^4.0.0",
+    "draft-js": "^0.11.7",
+    "draftjs-to-html": "^0.9.1",
+    "imagetracerjs": "^1.2.6",
+    "js-cookie": "^2.2.1",
+    "qs": "^6.9.4",
+    "react-color": "^2.19.3",
+    "react-draft-wysiwyg": "^1.14.5",
+    "react-easy-crop": "^3.5.2",
+    "react-html-parser": "^2.0.2",
+    "react-redux": "^7.2.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-rutter-link": "^1.0.6",
+    "redux": "^4.0.5",
+    "svgson": "^5.2.1",
+    "uuid": "^8.3.2"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  }
+}

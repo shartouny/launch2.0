@@ -1,0 +1,27 @@
+{
+  "name": "sunrise-integration/rutter-app",
+  "authors": [
+    {
+      "name": "Eduardo Donoso",
+      "email": "eduardo@sunriseintegration.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "SunriseIntegration\\Rutter\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "SunriseIntegration\\Rutter\\RutterServiceProvider"
+      ],
+      "aliases": {
+        "Rutter": "SunriseIntegration\\Rutter\\Facade"
+      }
+    }
+  }
+}

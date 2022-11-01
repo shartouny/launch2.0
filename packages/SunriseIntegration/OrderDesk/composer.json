@@ -1,0 +1,27 @@
+{
+    "name": "sunrise-integration/orderdesk-app",
+    "authors": [
+        {
+            "name": "Eduardo Donoso",
+            "email": "eduardo@sunriseintegration.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "SunriseIntegration\\OrderDesk\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SunriseIntegration\\OrderDesk\\OrderDeskServiceProvider"
+            ],
+            "aliases": {
+                "OrderDesk": "SunriseIntegration\\OrderDesk\\Facade"
+            }
+        }
+    }
+}

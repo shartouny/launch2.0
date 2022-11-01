@@ -1,0 +1,83 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+@import 'margins';
+
+// Helper Classes
+.text-center{
+  text-align: center;
+}
+.img-responsive{
+  width:100%;
+}
+.clickable{
+  -webkit-box-shadow: 1px 0 0 0 #e8e8e8, 0 1px 0 0 #e8e8e8, 1px 1px 0 0 #e8e8e8, 1px 0 0 0 #e8e8e8 inset, 0 1px 0 0 #e8e8e8 inset;
+  box-shadow: 1px 0 0 0 #e8e8e8, 0 1px 0 0 #e8e8e8, 1px 1px 0 0 #e8e8e8, 1px 0 0 0 #e8e8e8 inset, 0 1px 0 0 #e8e8e8 inset;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.clickable:hover{
+  -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+.page-wrapper{
+  max-width: 1630px;
+  margin:auto;
+  padding:0 1rem;
+}
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+.top-nav{
+  border-bottom: 0.0625rem solid #e8e8e8;
+}
+#nav{
+  text-align: right;
+  border-bottom: none;
+  width: 100%;
+}
+.brand-image{
+  max-height:1.875rem;
+  margin-top:0.5rem;
+}
+#components-form-normal-login .login-form {
+  max-width: 300px;
+}
+#components-form-normal-login .login-form-forgot {
+  float: right;
+}
+#components-form-normal-login .login-form-button {
+  width: 100%;
+}
+.upload-list-inline .ant-upload-list-item {
+  float: left;
+  width: 200px;
+  margin-right: 8px;
+}
+.upload-list-inline .ant-upload-animate-enter {
+  animation-name: uploadAnimateInlineIn;
+}
+.upload-list-inline .ant-upload-animate-leave {
+  animation-name: uploadAnimateInlineOut;
+}
+.box-border{
+  border:1px solid #e8e8e8;
+}
+.stage-wrapper{
+  position: relative;
+}
+.stage-level-one{
+  position: relative;
+  z-index: 5;
+}
+.stage-level-two{
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: 1;
+}

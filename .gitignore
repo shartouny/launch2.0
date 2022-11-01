@@ -1,0 +1,13 @@
+/node_modules
+/public/storage
+/vendor
+.env
+/public/js/*
+/public/css/*
+public/js/*
+.editorconfig
+.idea
+app-2.teelaunch.com
+app.teelaunch.com
+
+_git

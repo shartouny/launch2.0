@@ -1,0 +1,27 @@
+{
+    "name": "sunrise-integration/shopify-app",
+    "authors": [
+        {
+            "name": "Eduardo Donoso",
+            "email": "eduardo@sunriseintegration.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "SunriseIntegration\\Shopify\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SunriseIntegration\\Shopify\\ShopifyServiceProvider"
+            ],
+            "aliases": {
+                "Shopify": "SunriseIntegration\\Shopify\\Facade"
+            }
+        }
+    }
+}

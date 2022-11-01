@@ -1,0 +1,27 @@
+{
+    "name": "sunrise-integration/etsy-app",
+    "authors": [
+        {
+            "name": "Eduardo Donoso",
+            "email": "eduardo@sunriseintegration.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "SunriseIntegration\\Etsy\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SunriseIntegration\\Etsy\\EtsyServiceProvider"
+            ],
+            "aliases": {
+                "Shopify": "SunriseIntegration\\Etsy\\Facade"
+            }
+        }
+    }
+}
